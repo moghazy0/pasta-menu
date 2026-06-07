@@ -210,3 +210,12 @@ color:white;
 grid-template-columns:1fr;
 }
 }
+.qr{
+width:150px;
+height:150px;
+object-fit:contain;
+border-radius:12px;
+padding:10px;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
