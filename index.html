@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pasta Menu</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+<nav class="navbar">
+<h1 class="logo">🍝 Pasta</h1>
+
+<ul class="nav-links">
+<li><a href="#menu">Menu</a></li>
+<li><a href="#offers">Offers</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<div class="spinning-pasta">🍝</div>
+<h2>Welcome To Pasta</h2>
+<p>Fresh Italian Pasta & Drinks</p>
+<a href="#menu" class="btn">View Menu</a>
+</div>
+</section>
+
+<!-- CONTROLS -->
+<section class="controls">
+
+<input type="text" id="searchInput" placeholder="Search...">
+
+<div class="tabs">
+<button class="tab active" onclick="filterMenu('all', this)">All</button>
+<button class="tab" onclick="filterMenu('pasta', this)">Pasta</button>
+<button class="tab" onclick="filterMenu('cold', this)">Cold Drinks</button>
+<button class="tab" onclick="filterMenu('hot', this)">Hot Drinks</button>
+</div>
+
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu-section">
+
+<h2 class="section-title">Menu</h2>
+
+<div class="menu-columns">
+
+<!-- PASTA -->
+<div class="menu-column">
+
+<h3>🍝 Pasta</h3>
+
+<div class="card pasta">
+<img src="images/alfredo-chicken.avif">
+<div class="card-content">
+<h4>Alfredo Chicken</h4>
+<span>165 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/bolognese.avif">
+<div class="card-content">
+<h4>Bolognese</h4>
+<span>155 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/shrimp pasta.avif">
+<div class="card-content">
+<h4>Shrimp Pasta</h4>
+<span>220 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/Pink Pasta.avif">
+<div class="card-content">
+<h4>Pink Pasta</h4>
+<span>170 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/Chicken Pesto.avif">
+<div class="card-content">
+<h4>Chicken Pesto</h4>
+<span>175 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/Four Cheese.avif">
+<div class="card-content">
+<h4>Four Cheese</h4>
+<span>185 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/Dynamite Pasta.avif">
+<div class="card-content">
+<h4>Dynamite Pasta</h4>
+<span>190 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/Mexican Pasta.avif">
+<div class="card-content">
+<h4>Mexican Pasta</h4>
+<span>180 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/Seafood Mix.avif">
+<div class="card-content">
+<h4>Seafood Mix</h4>
+<span>250 EGP</span>
+</div>
+</div>
+
+<div class="card pasta">
+<img src="images/White Sauce Mushroom.avif">
+<div class="card-content">
+<h4>White Sauce Mushroom</h4>
+<span>160 EGP</span>
+</div>
+</div>
+
+</div>
+
+<!-- COLD -->
+<div class="menu-column">
+
+<h3>🥤 Cold Drinks</h3>
+
+<div class="card cold">
+<img src="images/Coca Cola.avif">
+<div class="card-content">
+<h4>Coca Cola</h4>
+<span>30 EGP</span>
+</div>
+</div>
+
+<div class="card cold">
+<img src="images/Sprite.avif">
+<div class="card-content">
+<h4>Sprite</h4>
+<span>30 EGP</span>
+</div>
+</div>
+
+<div class="card cold">
+<img src="images/Mango Juice.avif">
+<div class="card-content">
+<h4>Mango Juice</h4>
+<span>55 EGP</span>
+</div>
+</div>
+
+<div class="card cold">
+<img src="images/Orange Juice.avif">
+<div class="card-content">
+<h4>Orange Juice</h4>
+<span>45 EGP</span>
+</div>
+</div>
+
+<div class="card cold">
+<img src="images/Mojito.avif">
+<div class="card-content">
+<h4>Mojito</h4>
+<span>65 EGP</span>
+</div>
+</div>
+
+</div>
+
+<!-- HOT -->
+<div class="menu-column">
+
+<h3>☕ Hot Drinks</h3>
+
+<div class="card hot">
+<img src="images/Espresso.avif">
+<div class="card-content">
+<h4>Espresso</h4>
+<span>45 EGP</span>
+</div>
+</div>
+
+<div class="card hot">
+<img src="images/cappuccino.avif">
+<div class="card-content">
+<h4>Cappuccino</h4>
+<span>65 EGP</span>
+</div>
+</div>
+
+<div class="card hot">
+<img src="images/Latte.avif">
+<div class="card-content">
+<h4>Latte</h4>
+<span>70 EGP</span>
+</div>
+</div>
+
+<div class="card hot">
+<img src="images/Tea.avif">
+<div class="card-content">
+<h4>Tea</h4>
+<span>25 EGP</span>
+</div>
+</div>
+
+<div class="card hot">
+<img src="images/Hot Chocolate.avif">
+<div class="card-content">
+<h4>Hot Chocolate</h4>
+<span>75 EGP</span>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers" class="offers">
+<h2>🔥 Offers</h2>
+
+<div class="offer-box">Pasta + Drink = 185 EGP</div>
+<div class="offer-box">2 Pasta + 2 Drinks = 340 EGP</div>
+<div class="offer-box">Family Combo = 650 EGP</div>
+
+</section>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/201000000000" target="_blank">
+📲 Order on WhatsApp
+</a>
+
+<!-- CONTACT -->
+<footer id="contact">
+<h2>Contact Us</h2>
+<p>Open Daily 10AM - 2AM</p>
+</footer>
+
+<!-- SCRIPT (FIXED 100%) -->
+<script>
+
+let currentCategory = "all";
+
+function filterMenu(category, btn){
+
+currentCategory = category;
+
+let cards = document.querySelectorAll(".card");
+let tabs = document.querySelectorAll(".tab");
+
+tabs.forEach(t => t.classList.remove("active"));
+btn.classList.add("active");
+
+cards.forEach(card => {
+
+let matchCategory = category === "all" || card.classList.contains(category);
+let matchSearch = card.innerText.toLowerCase()
+.includes(document.getElementById("searchInput").value.toLowerCase());
+
+card.style.display = (matchCategory && matchSearch) ? "flex" : "none";
+
+});
+
+}
+
+// SEARCH (linked with filter)
+document.getElementById("searchInput").addEventListener("input", function(){
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+let matchCategory = currentCategory === "all" || card.classList.contains(currentCategory);
+let matchSearch = card.innerText.toLowerCase().includes(this.value.toLowerCase());
+
+card.style.display = (matchCategory && matchSearch) ? "flex" : "none";
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

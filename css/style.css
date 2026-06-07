@@ -1,0 +1,212 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff7ef;
+color:#222;
+}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(70,15,15,.9);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+color:#ffd27d;
+font-size:28px;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("../images/hero.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.spinning-pasta{
+font-size:120px;
+animation:spin 10s linear infinite;
+}
+
+@keyframes spin{
+from{transform:rotate(0);}
+to{transform:rotate(360deg);}
+}
+
+.hero h2{
+color:white;
+font-size:50px;
+}
+
+.hero p{
+color:#ddd;
+margin:10px 0;
+}
+
+.btn{
+background:#d4a44d;
+padding:12px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+}
+
+/* CONTROLS */
+.controls{
+padding:30px 8%;
+text-align:center;
+}
+
+.controls input{
+width:100%;
+max-width:400px;
+padding:12px;
+border-radius:10px;
+border:1px solid #ccc;
+margin-bottom:15px;
+}
+
+.tabs{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.tab{
+padding:8px 15px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+background:#eee;
+}
+
+.tab.active{
+background:#8b1e1e;
+color:white;
+}
+
+/* MENU */
+.menu-section{
+padding:50px 8%;
+}
+
+.menu-columns{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.menu-column{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.menu-column h3{
+text-align:center;
+margin-bottom:10px;
+color:#8b1e1e;
+}
+
+/* CARD */
+.card{
+display:flex;
+gap:10px;
+align-items:center;
+background:#fafafa;
+padding:10px;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.card img{
+width:50px;
+height:50px;
+border-radius:10px;
+object-fit:cover;
+}
+
+.card-content h4{
+font-size:14px;
+}
+
+.card-content span{
+font-weight:bold;
+color:#b22222;
+}
+
+/* OFFERS */
+.offers{
+padding:50px 8%;
+background:#5c1616;
+color:white;
+text-align:center;
+}
+
+.offer-box{
+margin:10px auto;
+padding:15px;
+background:rgba(255,255,255,.1);
+border-radius:10px;
+max-width:400px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:12px 18px;
+border-radius:50px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+padding:40px;
+text-align:center;
+background:#111;
+color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.menu-columns{
+grid-template-columns:1fr;
+}
+}
